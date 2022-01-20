@@ -1,0 +1,215 @@
+@import "./config";
+
+#navigation{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s ease;
+    z-index: 9;
+}
+// js nav scroll add
+.navigation_scroll{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb($baseColor,$alpha1);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 3px 10px rgba($primary1, $alpha4);
+}
+// -------------
+nav{
+    height: 50px;
+}
+.logo_container{
+    @include mQ(big){
+        width: 40%;
+    }
+}
+.logo{
+    font-family: "Montserrat",sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    position: relative;
+    padding-left: 10px;
+    &::after{
+        content: "";
+        position: absolute;
+        top: calc(50% + 3px);
+        // top: 0;
+        left: -15px;
+        height: 53px;
+        width: 105px;
+        transform: translateY(-50%);
+       
+        background-repeat: no-repeat;
+    }
+}
+.logoWht{
+    color: $baseColor;
+    &::after{
+        background-image: url("../../res/svg/logowht.svg") ;
+    }
+}
+.logoBlk{
+    color: $primary1;
+    &::after{
+        background-image: url("../../res/svg/logoBlk.svg") ;
+    }
+}
+
+.links{
+    color: $primary1;
+    font-size: 1em;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+.nav_links{
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 5px;
+        opacity: 0;
+        clip-path: polygon(50% 0%,100% 100%,0% 100%);
+        background-color: $primary1;
+        transition: 0.4s ease;
+    }
+    &:hover::after{
+        bottom: -10px;
+        opacity: 1;
+    }
+}
+.toAction{
+    text-shadow: none ;
+    padding: 5px 15px;
+    border: 2px solid $primary1;
+    transition: 0.4s ease;
+    &::after{
+        display: none;
+    }
+}
+#loginBtn{
+    color: $primary1;
+    &:hover{
+        box-shadow: 0 5px 10px rgb($primary1,$alpha2);
+    }
+}
+#signUpBtn{
+    margin-left: 20px;
+    color: $baseColor;
+    border-color: $secondary1;
+    background-color: $secondary1;
+    &:hover{
+        box-shadow: 0 5px 10px rgb($secondary1,$alpha2);
+    }
+}
+.user_container{
+    margin-right: 30px;
+    @include mQ(big){
+        display: none;
+    }
+    @include mQ(smPhone){
+        display: none;
+    }
+}
+.burger{
+    @include mQ(big){
+        display: none;
+    }
+    z-index: 9;
+    .rect{
+        height: 4px;
+        width: 30px;
+        background-color: $secondary1;
+        margin: 2px 0;
+        transition: 0.4s ease ;
+    }
+    .rect:nth-child(2){
+        margin-left: auto;
+        width: 20px;
+    }
+}
+.menu_list_container{
+    @include mQ(tablet){
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        max-width: 400px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba($primary1,$alpha);
+        backdrop-filter: blur(8px);
+        align-items: center;
+        padding: 100px 0 40px 60px;
+        transform: translateX(100%);
+        transition: 0.4s ease;
+        .menu_list{
+            width: 100%;
+            .nav_links{
+                display: block;
+                width: 100%;
+                color: $baseColor;
+                transition: 0.4s ease;
+                &::after{
+                    bottom: 50%;
+                    left: 0px;
+                    opacity: 0;
+                    height: 20px;
+                    width: 10px;
+                    transform: translateY(50%);
+                    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+                    background-color: $baseColor;
+                    transition: 0.4s ease;
+                }
+                &:hover{
+                    padding-left: 20px;
+                }
+                &:hover::after{
+                    left: -10px;
+                    opacity: 1;
+                }
+            }
+            .toAction{
+                display: none;
+            }
+        }
+    }
+}
+.toAction{
+    @include mQ(smPhone){
+        display: block !important;
+        width: max-content !important;
+        &#loginBtn{
+            border-color: $baseColor;
+            color: $baseColor;
+        }
+        &#signUpBtn{
+            margin-left: 0;
+        }
+    }
+}
+.menu_slide{
+    // display: none;
+    transform: translateX(0);
+}
+.burger_rotate{
+    .rect{
+        transform-origin: 7px;
+        background-color: $baseColor;
+    }
+    .rect:nth-child(1){
+        transform: rotate(45deg);
+    }
+    .rect:nth-child(2){
+        width: 0;
+    }
+    .rect:nth-child(3){
+        transform: rotate(-45deg);
+    }
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3273dcccfe.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,100;1,700;1,900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <section id="navigation" class="p-t-b-30 w-10">
+        <nav id="nav" class="d-flex d-sp-bt d-h-center m-a container">
+            <div class="logo_container m-r-auto h-10">
+                <div class="logo logoBlk d-flex d-h-center h-10">Reata</div>
+            </div>
+            <ul class="d-flex d-sp-bt m-a w-10 menu_list_container">
+                <li class="menu_list m-r-auto"><a class="nav_links links" href="#">Home</a></li>
+                <li class="menu_list m-r-auto"><a class="nav_links links" href="#">About</a></li>
+                <li class="menu_list m-r-auto"><a class="nav_links links" href="#">Gallery</a></li>
+                <li class="menu_list m-r-auto"><a class="nav_links links" href="#">Projects</a></li>
+                <li class="menu_list m-l-auto"><a id="loginBtn" class="nav_links links toAction" href="#">Login</a></li>
+                <li class="menu_list"><a id="signUpBtn" class="nav_links links toAction" href="#">Sign Up</a></li>
+            </ul>
+            <div class="user_container m-l-auto">
+                <ul class="d-flex d-sp-bt">
+                    <li class="user_login"><a id="loginBtn" class="toAction" href="#">Login</a></li>
+                    <li class="user_signup"><a id="signUpBtn" class="toAction" href="#">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="rect"></div>
+                <div class="rect"></div>
+                <div class="rect"></div>
+            </div>
+        </nav>
+    </section>
+    <section id="hero" class="w-10">
+        <main class="h-10 m-a container">
+            <div class="h-10 intro_container w-10">
+                <div class="intro intro_left w-4">
+                    <h1 id="intro_build" class="intro_headers headings">Build,</h1>
+                    <h1 id="intro_inovate" class="intro_headers headings">Inovate &amp;</h1>
+                    <h1 class="intro_headers headings">Create</h1>
+                    <p class="intro_para para">Give thoughts a shape and work them to perfection with us, because we, are all about inovation</p>
+                    <a class="intro_link links" href="#">Join Us</a>
+                </div>
+                <div class="intro intro_right h-10">
+                    <img src="../res/images/hero.png" alt="">
+                </div>
+            </div>
+        </main>
+    </section>
+    <section id="about_us_cards">
+        <div class="container">
+            <h1 class="about_us_headers headings">Let's Explore</h1>
+            <div class="cards_container d-grid">
+                <div class="cards card1">
+                    <div class="card_img">
+                        <img src="../res/images/idea.png" alt="ideas">
+                        <h3>Ideas</h3>
+                    </div>
+                    <div class="card_text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, repudiandae.</p>
+                    </div>
+                    <div class="card_link">
+                        <a href="#" class="intro_link links">Know More</a>
+                    </div>
+                </div>
+                <div class="cards card2">
+                    <div class="card_img">
+                        <img src="../res/images/toolbox.png" alt="bild">
+                        <h3>Wireframe</h3>
+                    </div>
+                    <div class="card_text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, repudiandae.</p>
+                    </div>
+                    <div class="card_link">
+                        <a href="#" class="intro_link links">Know More</a>
+                    </div>
+                </div>
+                <div class="cards card3">
+                    <div class="card_img">
+                        <img src="../res/images/idea (1).png" alt="create">
+                        <h3>Build</h3>
+                    </div>
+                    <div class="card_text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, repudiandae.</p>
+                    </div>
+                    <div class="card_link">
+                        <a href="#" class="intro_link links">Know More</a>
+                    </div>
+                </div>
+                <div class="cards card4">
+                    <div class="card_img">                        
+                        <img src="../res/images/cloud-computing.png" alt="upload">
+                        <h3>Upload</h3>
+                    </div>
+                    <div class="card_text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, repudiandae.</p>
+                    </div>
+                    <div class="card_link">
+                        <a href="#" class="intro_link links">Know More</a>
+                    </div>
+                </div>
+                <div class="cards card5">
+                    <div class="card_img">
+                        <img src="../res/images/network.png" alt="share">
+                        <h3>Share</h3>
+                    </div>
+                    <div class="card_text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, repudiandae.</p>
+                    </div>
+                    <div class="card_link">
+                        <a href="#" class="intro_link links">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="horizontalSpan">
+        <div class="span_continer container">
+            <p class="span_textContainer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nemo nam est sunt quia culpa et, a odio eligendi eaque!
+            </p>
+            <div class="logo_container">
+                <div class="logo logoWht">Reata</div>
+            </div>
+        </div>
+    </section>
+    <section id="connect_banner">
+        <div class="banners banner1 container">
+            <div class="bannerImgContainer">
+                <img src="../res/images/earth.png" alt="Earth">
+            </div>
+            <div class="bannerTextContainer">
+                <h3 class="headings">R<small>each</small></h3>
+                <p class="banner_decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officia at eum accusamus porro harum minima consequuntur laboriosam dolores vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti distinctio explicabo, quis eum perferendis animi eaque nam corrupti atque rem?</p>
+                <a href="#" class="bannerLinks intro_link links">Know More</a>
+            </div>
+        </div>
+        <div class="banners banner2 container">
+            <div class="bannerImgContainer">
+                <img src="../res/images/earth.png" alt="Earth">
+            </div>
+            <div class="bannerTextContainer">
+                <h3 class="headings">I<small>novate</small></h3>
+                <p class="banner_decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officia at eum accusamus porro harum minima consequuntur laboriosam dolores vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti distinctio explicabo, quis eum perferendis animi eaque nam corrupti atque rem?</p>
+                <a href="#" class="bannerLinks intro_link links">Know More</a>
+            </div>
+        </div>
+        <div class="banners banner3 container">
+            <div class="bannerImgContainer">
+                <img src="../res/images/earth.png" alt="Earth">
+            </div>
+            <div class="bannerTextContainer">
+                <h3 class="headings">B<small>uild</small></h3>
+                <p class="banner_decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officia at eum accusamus porro harum minima consequuntur laboriosam dolores vero. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti distinctio explicabo, quis eum perferendis animi eaque nam corrupti atque rem?</p>
+                <a href="#" class="bannerLinks intro_link links">Know More</a>
+            </div>
+        </div>
+    </section>
+    <section id="testimonial">
+        <h1 class="testimonial_headers headings">Testimonial</h1>
+        <div class="testimonial_container container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="user_imgContainer">
+                          <img src="../res/images/user1.png" alt="User Image">
+                      </div>
+                      <div class="user_testimony_container">
+                          <div class="quotes quotesOpen">&OpenCurlyDoubleQuote;</div>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolore facere reprehenderit natus ut officia nesciunt id ad, aliquam quibusdam?
+                            </p>
+                            <div class="quotes quotesClose">&CloseCurlyDoubleQuote;</div>
+                            <h3 class="user_name">-Augustin</h3>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="user_imgContainer">
+                          <img src="../res/images/user2.png" alt="User Image">
+                      </div>
+                      <div class="user_testimony_container">
+                          <div class="quotes quotesOpen">&OpenCurlyDoubleQuote;</div>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolore facere reprehenderit natus ut officia nesciunt id ad, aliquam quibusdam?
+                            </p>
+                            <div class="quotes quotesClose">&CloseCurlyDoubleQuote;</div>
+                            <h3 class="user_name">-Francis</h3>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="user_imgContainer">
+                          <img src="../res/images/user3.png" alt="User Image">
+                      </div>
+                      <div class="user_testimony_container">
+                          <div class="quotes quotesOpen">&OpenCurlyDoubleQuote;</div>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolore facere reprehenderit natus ut officia nesciunt id ad, aliquam quibusdam?
+                            </p>
+                            <div class="quotes quotesClose">&CloseCurlyDoubleQuote;</div>
+                            <h3 class="user_name">-Duke</h3>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="user_imgContainer">
+                          <img src="../res/images/user4.png" alt="User Image">
+                      </div>
+                      <div class="user_testimony_container">
+                          <div class="quotes quotesOpen">&OpenCurlyDoubleQuote;</div>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolore facere reprehenderit natus ut officia nesciunt id ad, aliquam quibusdam?
+                            </p>
+                            <div class="quotes quotesClose">&CloseCurlyDoubleQuote;</div>
+                            <h3 class="user_name">-Jhon</h3>
+                      </div>
+                  </div>
+                  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_container container">
+            <div class="footer_content">
+                <div class="logo_container">
+                    <div class="logo logoWht">Reata</div>
+                </div>
+                <div class="connect">
+                    <div class="connectLogo logo-github">
+                        <a target="blank" href="https://github.com/Paper-Pot"><img src="../res/svg/logo-github.svg" alt=""></a>
+                    </div>
+                    <div class="connectLogo logo-linkedin">
+                        <a target="blank" href="https://www.linkedin.com/in/rhitam-b-a13b63195/"><img src="../res/svg/icons8-linkedin.svg" alt=""></a>
+                    </div>
+                    <div class="connectLogo logo-stackoverflow">
+                        <a target="blank" href="https://stackoverflow.com/users/17815390/paper-pot"><img src="../res/svg/logo-stackoverflow.svg" alt=""></a>
+                    </div>
+                    <div class="connectLogo logo-hackerrank">
+                        <a target="blank" href="https://www.hackerrank.com/paperedoutpot"><img src="../res/svg/hackerrank.svg" alt=""></a>
+                    </div>
+                    <div class="connectLogo mail">
+                        <a target="blank" href="mailto:banerjeerhitam1@gmail.com"><img src="../res/svg/mail-outline.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop:true,
+            grabCursor: true,
+            centeredSlides: true,
+            keyboard: {
+                enabled: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+      </script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

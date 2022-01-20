@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+}
+@font-face {
+    font-family: "Matroska";
+    src: url(../../res/fonts/webfontkit-20220110-114717/matroska-rppg6-webfont.woff);
+}
+// --------------- colors
+$primary1: #464650;
+$primary2: #64646f;
+$secondary1: #785B00;
+$secondary2: #CFA616;
+$baseColor: #E8E8F4;
+
+$alpha:0.95;
+$alpha1:0.8;
+$alpha2:0.6;
+$alpha3:0.4;
+$alpha4:0.2;
+$alpha5:0.1;
+// --------------- media queries
+$mini:450px;
+$small:650px;
+$mid:960px;
+@mixin mQ($args) {
+    @if $args == smPhone{
+        @media( max-width:$mini){
+            @content;
+        }
+    }@else if $args == phone{
+        @media( max-width:$small){
+            @content;
+        }
+    }@else if $args == tablet{
+        @media(max-width:$mid){
+            @content;
+        }
+    }@else if $args == big{
+        @media(min-width:$mid){
+            @content
+        }
+    }
+}
+
+
+
+// --------------- classes heights
+.h-10{
+    height: 100%;
+}
+.h-9{
+    height: 90%;
+}
+.h-8{
+    height: 80%;
+}
+.h-7{
+    height: 70%;
+}
+.h-6{
+    height: 60%;
+}
+.h-5{
+    height: 50%;
+}
+.h-4{
+    height: 40%;
+}
+.h-3{
+    height: 30%;
+}
+.h-2{
+    height: 20%;
+}
+.h-1{
+    height: 10%;
+}
+.h-auto{
+    height: auto;
+}
+// --------------- classes widths
+.container{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 1260px;
+    padding: 0 30px;
+}
+.w-10{
+    width: 100%;
+}
+.w-9{
+    width: 90%;
+}
+.w-8{
+    width: 80%;
+}
+.w-7{
+    width: 70%;
+}
+.w-6{
+    width: 60%;
+}
+.w-5{
+    width: 50%;
+}
+.w-4{
+    width: 40%;
+}
+.w-3{
+    width: 30%;
+}
+.w-2{
+    width: 20%;
+}
+.w-1{
+    width: 10%;
+}
+.w-auto{
+    width: auto;
+}
+//---------------- classes margin
+.m-a{
+    margin: auto;
+}
+.m-r-auto{
+    margin-right: auto;
+}
+.m-b-auto{
+    margin-bottom: auto;
+}
+.m-l-auto{
+    margin-left: auto;
+}
+// --------------- classes padding
+.p-l-10{
+    padding-left: 10px;
+}
+.p-r-10{
+    padding-right: 10px;
+}
+.p-b-10{
+    padding-bottom: 10px;
+}
+.p-t-10{
+    padding-top: 10px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-t-b-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.p-l-r-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.p-l-20{
+    padding-left: 20px;
+}
+.p-r-20{
+    padding-right: 20px;
+}
+.p-b-20{
+    padding-bottom: 20px;
+}
+.p-t-20{
+    padding-top: 20px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-t-b-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.p-l-r-20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.p-l-30{
+    padding-left: 30px;
+}
+.p-r-30{
+    padding-right: 30px;
+}
+.p-b-30{
+    padding-bottom: 30px;
+}
+.p-t-30{
+    padding-top: 30px;
+}
+.p-30{
+    padding: 30px;
+}
+.p-t-b-30{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.p-l-r-30{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.p-l-40{
+    padding-left: 40px;
+}
+.p-r-40{
+    padding-right:40px;
+}
+.p-b-40{
+    padding-bottom: 30px;
+}
+.p-t-40{
+    padding-top: 40px;
+}
+.p-40{
+    padding: 40px;
+}
+.p-t-b-40{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.p-l-r-40{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.p-l-50{
+    padding-left: 50px;
+}
+.p-r-50{
+    padding-right:50px;
+}
+.p-b-50{
+    padding-bottom: 50px;
+}
+.p-t-50{
+    padding-top: 50px;
+}
+.p-50{
+    padding: 50px;
+}
+.p-t-b-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.p-l-r-50{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+// --------------- classes display
+.d-flex{
+    display: flex;
+}
+.d-grid{
+    display: grid;
+}
+//---------------- classes display orientation
+.d-center{
+    justify-content: center;
+    align-items: center;
+}
+.d-sp-ar{
+    justify-content: space-around;
+}
+.d-sp-ev{
+    justify-content: space-evenly;
+}
+.d-sp-bt{
+    justify-content: space-between;
+}
+.d-h-top{
+    align-items: flex-end;
+}
+.d-h-center{
+    align-items: center;
+}
+.d-h-end{
+    align-items: flex-end;
+}
+.d-v-center{
+    justify-content: center;
+}
+.p-itm-center{
+    place-items: center;
+}
